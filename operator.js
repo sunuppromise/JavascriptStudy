@@ -1,3 +1,5 @@
+'use strict'
+
 // string concatenation
 {
     console.log('my' + 'dog');

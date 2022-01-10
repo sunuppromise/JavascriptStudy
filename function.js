@@ -1,3 +1,5 @@
+'use strict'
+
 // function
 // one function === one thing
 // 인자에 문제가 생긴다면 TypeScript를 권장
