@@ -1,0 +1,49 @@
+.title {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+.headerBar {
+  background: rgb(43, 50, 56);
+}
+.headerBar > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.navi {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  align-items: flex-end;
+  margin: 19px 0 19px 0;
+}
+.navi li {
+  list-style: none;
+  height: 10vh;
+  align-items: center;
+}
+.etcIcons {
+  display: flex;
+  align-items: center;
+}
+.etcIcons > img {
+  height: 13vh;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .navi {
+    display: flex;
+    flex-direction: column;
+  }
+  .etcIcons {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,92 @@
+:root {
+  --text-color: #f0f4f4;
+  --hearderBar-color: rgb(32, 32, 39);
+  --listhoberback-color: rgb(255, 196, 0);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+li {
+  list-style: none;
+}
+
+.headerBar {
+  background: var(--hearderBar-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.header_Logo {
+  display: flex;
+  align-items: center;
+}
+
+.header_Logo img {
+  align-items: center;
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navi li {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.navi li:hover {
+  padding: 15px;
+  background: var(--listhoberback-color);
+  border-radius: 10px;
+}
+
+.etcIcons {
+  display: flex;
+  align-items: center;
+}
+
+.etcIcons li {
+  margin: 10px;
+}
+
+.hambuger {
+  display: none;
+  position: absolute;
+  right: 32px;
+}
+
+@media screen and (max-width: 780px) {
+  .headerBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navi {
+    display: none;
+    flex-direction: column;
+  }
+
+  .etcIcons {
+    display: none;
+    justify-content: center;
+  }
+  .hambuger {
+    display: flex;
+  }
+
+  .navi.active,
+  .etcIcons.active {
+    display: flex;
+  }
+}
