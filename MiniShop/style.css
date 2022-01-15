@@ -1,0 +1,95 @@
+:root {
+  --body-background: rgb(27, 22, 56);
+  --btn1-color: blue;
+  --btn2-color: yellow;
+  --btn3-color: pink;
+  --btn-font: black;
+  --border-color: gray;
+  --list-background: white;
+  --padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+body {
+  display: flex;
+  background: var(--body-background);
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+nav {
+  width: 30%;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav > ul > li {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li:hover {
+  background: orange;
+  cursor: pointer;
+}
+
+nav > ul > li > a > img {
+  width: 30px;
+  padding: var(--padding);
+}
+
+nav > ul > li > button {
+  width: 40px;
+  height: 20px;
+  border: 1px solid var(--border-color);
+  color: var(--btn-font);
+}
+
+nav > ul > li > #blue-btn {
+  background: var(--btn1-color);
+}
+
+nav > ul > li > #yellow-btn {
+  background: var(--btn2-color);
+}
+
+nav > ul > li > #pink-btn {
+  background: var(--btn3-color);
+}
+
+#product-List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#product-List > li {
+  width: 40%;
+  display: flex;
+  background: var(--list-background);
+  margin-bottom: 2px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#product-List > li > img {
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#product-List > li > p {
+  font-size: 10px;
+  color: var(--btn-font);
+  margin-right: 20px;
+}

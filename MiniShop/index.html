@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header id="logo">
+        <img src="./images/logo.png" >
+    </header>    
+    <nav>
+        <ul>
+            <li><a onclick="getFindProduct('shirts')"><img src="./images/blue_s.png" ></a></li>
+            <li><a onclick="getFindProduct('pants')" ><img src="./images/blue_p.png" ></a></li>
+            <li><a onclick="getFindProduct('skirt')" ><img src="./images/blue_t.png" ></a></li>
+            <li><button id="blue-btn" onclick="getFindProduct('blue')">blue</button></li>
+            <li><button id="yellow-btn" onclick="getFindProduct('yellow')">yellow</button></li>
+            <li><button id="pink-btn" onclick="getFindProduct('pink')">pink</button></li>
+        </ul>
+    </nav>
+    <ul id="product-List">
+        <li class="blue shirts">
+            <img src="./images/blue_s.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="blue pants">
+            <img src="./images/blue_p.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="blue skirt">
+            <img src="./images/blue_t.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="yellow shirts">
+            <img src="./images/yellow_s.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="yellow pants">
+            <img src="./images/yellow_p.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="yellow skirt">
+            <img src="./images/yellow_t.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="pink shirts">
+            <img src="./images/pink_s.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="pink pants">
+            <img src="./images/pink_p.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+        <li class="pink skirt">
+            <img src="./images/pink_t.png" >
+            <p>man</p>
+            <p>small size</p>
+        </li>
+    </ul>
+</body>
+</html>
