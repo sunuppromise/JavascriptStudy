@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.youtube-header {
+  background: rgb(49, 48, 48);
+  height: 3rem;
+
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.youtube-header img {
+  height: 2rem;
+}
+
+.youtube-logo {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+.youtube-logo > a {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.youtube-search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0.5rem;
+}
+
+.youtube-search > img {
+  height: 1rem;
+  background: whitesmoke;
+  padding: 5px;
+}
+
+.input-text-search {
+  display: flex;
+  padding: 5px;
+  flex-grow: 1;
+  background: gray;
+  border: 1px solid rgb(49, 48, 48);
+  border-radius: 2px;
+}
+
+.frame {
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+}
+
+.frame-controler {
+  width: 100%;
+  height: 300px;
+  max-width: 800px;
+}
+
+.infoToPlayList {
+  display: flex;
+  flex-direction: column;
+}
+
+.videoInfo {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+.video-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.InfoBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.InfoBlock a {
+  color: black;
+}
+
+.InfoBlock img {
+  height: 20px;
+}
+
+.youtuber-Info {
+  display: flex;
+  margin: 10px 0 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.youtuber {
+  display: flex;
+  align-items: center;
+}
+
+.youtuber-Info img {
+  height: 8vh;
+  border-radius: 50%;
+}
+
+.youtuber-Info > a {
+  font-size: 2vh;
+}
+
+.subscribe-btn {
+  background: crimson;
+  color: whitesmoke;
+  border: 0;
+  width: 4rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.video-introduction {
+  border-bottom: 1px solid gray;
+}
+
+.playListBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.playListBlock img {
+  height: 100px;
+  width: 100px;
+}
+
+.playListBlock li {
+  display: flex;
+  align-items: center;
+}
+
+.playListBlock li > a {
+  color: black;
+  font-size: 15px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+  .infoToPlayList {
+    display: flex;
+    flex-direction: row;
+  }
+  .videoInfo {
+    display: flex;
+    flex-grow: 1;
+  }
+}
