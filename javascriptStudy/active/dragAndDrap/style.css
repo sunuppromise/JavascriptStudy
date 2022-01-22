@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  background: rgb(201, 196, 196);
+  min-height: 50px;
+  min-width: 200px;
+}
+
+.container .dragItem {
+  background: none;
+  cursor: move;
+}
+
+.dragItem.dragging {
+  opacity: 0.5;
+}
