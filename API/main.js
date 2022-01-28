@@ -1,8 +1,7 @@
 'use strict';
 
 var xhr = new XMLHttpRequest();
-var url =
-  'https://cors-anywhere.herokuapp.com/http://apis.data.go.kr/1360000/EqkInfoService/getEqkMsg'; /*URL*/
+var url = 'http://apis.data.go.kr/1360000/EqkInfoService/getEqkMsg'; /*URL*/
 var queryParams =
   '?' +
   encodeURIComponent('serviceKey') +
@@ -16,12 +15,12 @@ queryParams +=
   '&' +
   encodeURIComponent('fromTmFc') +
   '=' +
-  encodeURIComponent('20171101'); /**/
+  encodeURIComponent('20220125'); /**/
 queryParams +=
   '&' +
   encodeURIComponent('toTmFc') +
   '=' +
-  encodeURIComponent('20171129'); /**/
+  encodeURIComponent('20220127'); /**/
 console.log(url + queryParams);
 xhr.open('GET', url + queryParams);
 xhr.onreadystatechange = function () {
@@ -34,6 +33,7 @@ xhr.onreadystatechange = function () {
         'nBody: ' +
         this.responseText
     );
+    console.log(JSON.stringify(this.getAllResponseHeaders()));
   }
 };
 
